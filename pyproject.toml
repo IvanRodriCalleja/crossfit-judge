@@ -1,0 +1,23 @@
+[project]
+name = "juez-crossfit"
+version = "0.1.0"
+description = "Real-time automatic squat judge for CrossFit by computer vision (BSc thesis)"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "Iván Rodríguez Calleja" }]
+dependencies = [
+    "torch",
+    "mediapipe",
+    "opencv-python",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["squat"]

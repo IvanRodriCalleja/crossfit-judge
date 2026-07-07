@@ -1,0 +1,18 @@
+{
+  "subject": "ivan",
+  "root": "squat/data/grabaciones_v2",
+  "filename": "{name}_{camera}.mp4",
+  "cameras": ["lateral", "frontal", "45deg"],
+  "takes": [
+    {"name": "mix1", "session": "s1", "expected": 24,
+     "pattern": {"type": "cycle", "classes": ["VALIDA", "INVALIDA_PROFUNDIDAD", "INVALIDA_LOCKOUT"]}},
+    {"name": "mix2", "session": "s1", "expected": 24,
+     "pattern": {"type": "cycle", "classes": ["VALIDA", "INVALIDA_PROFUNDIDAD", "INVALIDA_LOCKOUT"]}},
+    {"name": "lockout1", "session": "s1", "expected": 15,
+     "pattern": {"type": "fixed", "class": "INVALIDA_LOCKOUT"}},
+    {"name": "lockout2", "session": "s1", "expected": 12,
+     "pattern": {"type": "fixed", "class": "INVALIDA_LOCKOUT"}},
+    {"name": "profund1", "session": "s1", "expected": 15,
+     "pattern": {"type": "fixed", "class": "INVALIDA_PROFUNDIDAD"}}
+  ]
+}

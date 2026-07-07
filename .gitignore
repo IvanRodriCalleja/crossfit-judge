@@ -1,0 +1,19 @@
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Datos y modelos por movimiento (grandes; no se versionan)
+*/data/*
+!*/data/.gitkeep
+*/checkpoints/*
+!*/checkpoints/.gitkeep
+
+# Sistema / editor
+.DS_Store
+.idea/
+.vscode/
+
+# uv
+.uv/
